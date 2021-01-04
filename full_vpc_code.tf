@@ -352,10 +352,6 @@ resource "aws_instance" "web1" {
   }
   subnet_id = aws_subnet.web1.id
 
-  provisioner "file" {
-    source      = "/home/ubuntu/terraform/vpc_prod.pem"
-    destination = "/home/ubuntu/vpc_prod.pem"
-  }
 }
 /*
 resource "aws_instance" "web2" {
