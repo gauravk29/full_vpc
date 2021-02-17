@@ -6,7 +6,7 @@ pipeline {
     stages {
      stage('Git Checkout') {
             steps {
-                git branch: 'devops', credentialsId: 'git', url: 'https://github.com/gauravk29/full_vpc'
+                git branch: 'test', credentialsId: 'git', url: 'https://github.com/gauravk29/full_vpc'
             }
         } 
         stage('Terraform Init') {
