@@ -1,4 +1,4 @@
-# Provider test
+# Provider
 
 provider "aws" {
   profile = "default"
